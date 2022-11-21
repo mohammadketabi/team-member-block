@@ -1,9 +1,9 @@
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 export default function save() {
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Boilerplate – hello from the saved content!' }
-		</p>
+		<div { ...useBlockProps.save() }>
+			<InnerBlocks.Content />
+		</div>
 	);
 }
