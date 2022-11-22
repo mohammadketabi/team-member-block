@@ -23,6 +23,30 @@ registerBlockType( 'blocks-mk/team-member', {
 			source: 'html',
 			selector: 'p',
 		},
+		id: {
+			type: 'number',
+		},
+		alt: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'alt',
+			default: '',
+		},
+		url: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'src',
+		},
+		socialLinks: {
+			type: 'array',
+			default: [
+				{ link: 'https://facebook.com', icon: 'facebook' },
+				{ link: 'https://linkedin.com', icon: 'linkedin' },
+				{ link: 'https://instagram.com', icon: 'instagram' },
+			],
+		},
 	},
 	edit: Edit,
 	save: Save,

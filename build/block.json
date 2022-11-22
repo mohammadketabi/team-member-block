@@ -13,10 +13,20 @@
     "Grid"
   ],
   "supports": {
-    "html": false
+    "html": false,
+    "align": [
+      "full",
+      "wide"
+    ]
   },
   "textdomain": "team-members",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css"
+  "style": "file:./style-index.css",
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 2
+    }
+  }
 }

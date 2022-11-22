@@ -7,12 +7,19 @@
 	"category": "media",
 	"icon": "groups",
 	"description": "A team members grid.",
-	"keywords": ["Team", "Members", "Grid"],
+	"keywords": [ "Team", "Members", "Grid" ],
 	"supports": {
-		"html": false
+		"html": false,
+		"align": [ "full", "wide" ]
 	},
 	"textdomain": "team-members",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css"
+	"style": "file:./style-index.css",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 2
+		}
+	}
 }
